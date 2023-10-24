@@ -1,0 +1,42 @@
+<html>
+	<style type="text/css">
+#submit {
+ background-color: #bbb;
+ padding: .5em;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ border-radius: 6px;
+ color: #fff;
+ font-family: 'Oswald';
+ font-size: 20px;
+ text-decoration: none;
+ border: none;
+}
+#submit:hover {
+ border: none;
+ background: orange;
+ box-shadow: 0px 0px 1px #777;
+}
+</style>
+	<center>
+	<img src="eft1.jpg" alt="eft" style="width:500px;height:600px;">
+	<p><br></p>
+	<button id="submit" onclick="myFunction1()">a)Eiffel Tower</button>
+	<button id="submit" onclick="myFunction2()">b)Tower of pisa</button>
+	<p><br></p>
+	<button id="submit" onclick="myFunction2()">c)A cell phone tower</button>
+	<button id="submit" onclick="myFunction2()">d)Tokyo Tower</button>
+	<p id="demo"></p>
+
+	<script>	
+	function myFunction1() {
+	  document.getElementById("demo").innerHTML = "Verified";
+	  location.replace("https://en.wikipedia.org/wiki/Eiffel_Tower")
+	}
+	function myFunction2() {
+	  document.getElementById("demo").innerHTML = "Try Again";
+	}
+	</script>
+	</center>
+
+</html>
